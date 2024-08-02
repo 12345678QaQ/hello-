@@ -2,7 +2,7 @@
 import streamlit as st
 from PIL import Image
 
-page = st.sidebar.radio('我的首页', ['我的兴趣推荐', '我的图片处理工具', '我的智慧词典', '我的留言区','我的音乐区'])
+page = st.sidebar.radio('我的首页', ['我的兴趣推荐', '我的图片处理工具', '我的智慧词典', '我的留言区','我的音乐区','壁纸分享区'])
 
 def page_1():
     '''我的兴趣推荐'''
@@ -160,11 +160,63 @@ def page_5():
     with open('8.mp3', 'rb') as f:
         mymp3 = f.read()
     st.audio(mymp3, format='audio/mp3', start_time=0)
-    
+
     st.write('NO.9')
     with open('9.mp3', 'rb') as f:
         mymp3 = f.read()
     st.audio(mymp3, format='audio/mp3', start_time=0)
+
+    st.write('NO.10')
+    with open('10.mp3', 'rb') as f:
+        mymp3 = f.read()
+    st.audio(mymp3, format='audio/mp3', start_time=0)
+
+    st.write('NO.11')
+    with open('11.mp3', 'rb') as f:
+        mymp3 = f.read()
+    st.audio(mymp3, format='audio/mp3', start_time=0)
+
+    st.write('NO.12')
+    with open('12.mp3', 'rb') as f:
+        mymp3 = f.read()
+    st.audio(mymp3, format='audio/mp3', start_time=0)
+
+    st.write('NO.13')
+    with open('13.mp3', 'rb') as f:
+        mymp3 = f.read()
+    st.audio(mymp3, format='audio/mp3', start_time=0)
+
+    st.write('NO.14')
+    with open('14.mp3', 'rb') as f:
+        mymp3 = f.read()
+    st.audio(mymp3, format='audio/mp3', start_time=0)
+
+    st.write('NO.15')
+    with open('15.mp3', 'rb') as f:
+        mymp3 = f.read()
+    st.audio(mymp3, format='audio/mp3', start_time=0)
+
+    st.write('NO.16')
+    with open('16.mp3', 'rb') as f:
+        mymp3 = f.read()
+    st.audio(mymp3, format='audio/mp3', start_time=0)
+
+    st.write('NO.17')
+    with open('17.mp3', 'rb') as f:
+        mymp3 = f.read()
+    st.audio(mymp3, format='audio/mp3', start_time=0)
+
+    st.write('NO.18')
+    with open('18.mp3', 'rb') as f:
+        mymp3 = f.read()
+    st.audio(mymp3, format='audio/mp3', start_time=0)
+
+    st.write('NO.19')
+    with open('19.mp3', 'rb') as f:
+        mymp3 = f.read()
+    st.audio(mymp3, format='audio/mp3', start_time=0)
+def page_6():
+    st.image('8.png')
 if page == '我的兴趣推荐':
     page_1()
 elif page == '我的图片处理工具':
@@ -175,3 +227,5 @@ elif page == '我的留言区':
     page_4()
 elif page == '我的音乐区':
     page_5()
+elif page == '壁纸分享区':
+    page_6()
